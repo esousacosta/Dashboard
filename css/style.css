@@ -1,0 +1,40 @@
+.search-zone {
+    display: grid;
+    grid-template-columns: minmax(100px, 250px) 4fr minmax(100px, 250px);
+    grid-template-rows: min-content 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.search-zone .search-bar {
+    width: min(90%, 900px);
+    display: flex;
+}
+
+.search-bar > input {
+    flex: 1;
+}
+
+.account-zone {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.account-logo {
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.account-logo > img{
+    width: 50px;
+}
+
+.website-logo {
+    max-width: 200px;
+}
+
+.website-logo > img {
+    width: 100px;
+}
