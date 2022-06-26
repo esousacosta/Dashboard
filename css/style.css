@@ -28,11 +28,12 @@ body {
 .search-zone {
     display: grid;
     grid-template-columns: minmax(50px, 250px) 4fr minmax(100px, 250px);
-    grid-template-rows: min-content min(50px, 10%);
+    grid-template-rows: min-content minmax(min-content, 50px);
     justify-items: center;
     align-items: center;
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding-top: 10px;
 }
 
 .categories-button {
@@ -90,8 +91,20 @@ body {
     width: 30px;
 }
 
-.website-logo {
+.website-logo-zone {
+    display: flex;
     max-width: 200px;
+    align-items: center;
+    gap: 10px;
+}
+
+.website-name {
+    font-family: 'Stoke', serif;
+    font-size: 2em;
+}
+
+.website-logo-zone > img {
+    width: 50px;
 }
 
 .below-search-bar-zone {
@@ -120,10 +133,6 @@ body {
 
 .price-field {
     width: 50%;
-}
-
-.website-logo > img {
-    width: 100px;
 }
 
 .sidebar {
