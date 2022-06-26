@@ -12,6 +12,7 @@ body {
     grid-column: 1 / -1;
     position: sticky;
     width: 100%;
+    height: auto;
     top: 0;
 }
 
@@ -19,7 +20,6 @@ body {
     justify-self: center;
     width: 80%;
     display: grid;
-    /* grid-template-rows: 1fr 9fr; */
     grid-template-columns: 1fr 4fr;
     gap: 20px;
     margin: 0px;
@@ -28,7 +28,7 @@ body {
 .search-zone {
     display: grid;
     grid-template-columns: minmax(50px, 250px) 4fr minmax(100px, 250px);
-    grid-template-rows: min-content min(min-content, 100px);
+    grid-template-rows: min-content min(50px, 10%);
     justify-items: center;
     align-items: center;
     background-color: #8BC6EC;
@@ -38,6 +38,10 @@ body {
 .categories-button {
     display: flex;
     gap: 10px;
+}
+
+.below-search-bar-zone {
+    height: auto;
 }
 
 .search-zone .search-bar {
@@ -64,7 +68,12 @@ body {
 .account-zone {
     display: flex;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    gap: 10px;
+}
+
+.account-zone :nth-child(2) {
+    align-self: center;
 }
 
 .account-logo {
@@ -74,7 +83,11 @@ body {
 }
 
 .account-logo > img{
-    width: 50px;
+    width: 30px;
+}
+
+.basket-logo-container > img {
+    width: 30px;
 }
 
 .website-logo {
@@ -96,7 +109,8 @@ body {
 }
 
 .free-shipping-section {
-
+    display: flex;
+    flex-direction: column;
 }
 
 #free-shipping-filter {
