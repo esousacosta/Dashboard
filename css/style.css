@@ -1,5 +1,5 @@
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     display: grid;
     justify-items: center;
 }
@@ -15,6 +15,8 @@ html {
 
 .header {
     grid-column: 1 / -1;
+    position: sticky;
+    top: 0;
 }
 
 .search-zone {
@@ -82,8 +84,22 @@ html {
     font-size: 1.1em;
 }
 
-.sidebar-heading {
+.sidebar-heading, .price-heading, #free-shipping-heading {
     font-size: 1.5em;
+    font-weight: 700;
+}
+
+.free-shipping-section {
+
+}
+
+#free-shipping-filter {
+    width: 20px;
+    height: 20px;
+}
+
+.price-field {
+    width: 50%;
 }
 
 .website-logo > img {
@@ -93,6 +109,9 @@ html {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
 }
 
 .main-section {
@@ -106,6 +125,13 @@ html {
 
 .item-card {
     width: 100%;
+    text-align: center;
+    border: lightgray 1px solid;
+    border-radius: 5px;
+}
+
+.card-image-container {
+    padding: 10%;
 }
 
 .card-image {
