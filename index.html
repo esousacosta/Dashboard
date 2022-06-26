@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>Dashboard project</title>
 </head>
-<body class="page-body">
 
+<body>
     <div class="header">
         <div class="search-zone">
             <div class="website-logo">
@@ -23,14 +25,14 @@
                 <input id="search-field" type="text" placeholder="Odyssey">
                 <button id="search-btn" type="button">Search</button>
             </div>
-            
+
             <div class="account-zone">
                 <div class="account-logo">
                     <img src="./images/account-icon.svg" alt="A circle with a person's silhouette within">
                 </div>
                 <div>Account</div>
             </div>
-            
+
             <div class="categories-button">
                 <img src="./images/menu-icon.svg" alt="hamburguer menu icon">
                 <p>Categories</p>
@@ -41,119 +43,132 @@
             </div>
         </div>
     </div>
-    
-    <div class="sidebar">
-        <div class="categories-filter-section">
-            <div class="sidebar-heading">Category</div>
-            <div>Romance</div>
-            <div>Fiction</div>
-            <div>Horror</div>
-            <div>Thriller</div>
-            <div>Comedy</div>
-            <div>Philosophy</div>
-            <div>Engineering</div>
-            <div>Finance</div>
-            <div>Self-help</div>
+
+    <div class="page-body">
+        <div class="sidebar">
+            <div class="categories-filter-section">
+                <div class="sidebar-heading">Category</div>
+                <div>Romance</div>
+                <div>Fiction</div>
+                <div>Horror</div>
+                <div>Thriller</div>
+                <div>Comedy</div>
+                <div>Philosophy</div>
+                <div>Engineering</div>
+                <div>Finance</div>
+                <div>Self-help</div>
+            </div>
+
+            <div class="price-filter-section">
+                <div class="price-heading">Price</div>
+                <div class="price-field">
+                    <label for="min-price">Min.</label>
+                    <input id="min-price" type="text" placeholder="10">
+                </div>
+
+                <div class="price-field">
+                    <label for="max-price">Max.</label>
+                    <input id="max-price" type="text" placeholder="200">
+                </div>
+
+            </div>
+
+            <div class="free-shipping-section">
+                <label id="free-shipping-heading" for="free-shipping-filter">Free shipping</label>
+                <input type="checkbox" id="free-shipping-filter">
+            </div>
         </div>
 
-        <div class="price-filter-section">
-            <div class="price-heading">Price</div>
-            <div class="price-field">
-                <label for="min-price">Min.</label>
-                <input id="min-price" type="text" placeholder="10">
+        <div class="main-section">
+            <div class="item-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="./images/olavo-book-1.jpg"
+                        alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                </div>
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
             </div>
-        
-            <div class="price-field">
-                <label for="max-price">Max.</label>
-                <input id="max-price" type="text" placeholder="200">
-            </div>
-        
-        </div>
-
-        <div class="free-shipping-section">
-            <label id="free-shipping-heading" for="free-shipping-filter">Free shipping</label>
-            <input type="checkbox" id="free-shipping-filter">
-        </div>
-    </div>
-    
-    <div class="main-section">
-        <div class="item-card">
-            <div class="card-image-container">
-                <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            </div>
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div> 
-        <div class="item-card">
-            <div class="card-image-container">
-                <img class="card-image" src="./images/nossa-senhora-dos-ateus-book.jpg"
+            <div class="item-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="./images/nossa-senhora-dos-ateus-book.jpg"
+                        alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                </div>
+                <p>Paulo Briguet</p>
+                <p class="item-title">Nossa Senhoa dos Ateus: 100 crônicas de Paulo Briguet</p>
+                <div class="price">from <span>R$ 35,05</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
                     alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p>Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
+            </div class="price">
+            <div class="item-card">
+                <img class="card-image" src="./images/olavo-book-1.jpg"
+                    alt="Olavo de carvalho's Diary - Vol. 2 book cover">
+                <p class="item-author">Olavo de carvalho</p>
+                <p class="item-title">Diário - Volume 2</p>
+                <div class="price">from <span>R$ 80,99</span></div>
             </div>
-            <p>Paulo Briguet</p>
-            <p class="item-title">Nossa Senhoa dos Ateus: 100 crônicas de Paulo Briguet</p>
-            <div class="price">from <span>R$ 35,05</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p>Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div class="price"> 
-        <div class="item-card">
-            <img class="card-image" src="./images/olavo-book-1.jpg" alt="Olavo de carvalho's Diary - Vol. 2 book cover">
-            <p class="item-author">Olavo de carvalho</p>
-            <p class="item-title">Diário - Volume 2</p>
-            <div class="price">from <span>R$ 80,99</span></div> 
-        </div> 
+        </div>
     </div>
 </body>
 </html>

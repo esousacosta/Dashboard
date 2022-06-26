@@ -1,22 +1,28 @@
 html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    display: grid;
-    justify-items: center;
 }
 
-.page-body {
-    width: 80%;
-    display: grid;
-    grid-template-rows: 1fr 9fr;
-    grid-template-columns: 1fr 4fr;
-    gap: 20px;
+body {
+    width: 100%;
     margin: 0px;
+    display: grid;
 }
 
 .header {
     grid-column: 1 / -1;
     position: sticky;
+    width: 100%;
     top: 0;
+}
+
+.page-body {
+    justify-self: center;
+    width: 80%;
+    display: grid;
+    /* grid-template-rows: 1fr 9fr; */
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    margin: 0px;
 }
 
 .search-zone {
